@@ -20,5 +20,5 @@ use App\Http\Controllers\Api\UserController;
 // });
 
 
-Route::post('/auth/register', [UserController::class, 'createUser']);
-Route::post('/auth/login', [UserController::class, 'loginUser']);
+// Route::post('/auth/register', [UserController::class, 'createUser']);
+// Route::post('/auth/login', [UserController::class, 'loginUser']);

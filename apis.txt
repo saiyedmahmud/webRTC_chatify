@@ -1,0 +1,3 @@
+name:send message
+request:post
+url:https://chattestproject.squadinnovators.com/chatify/sendMessage

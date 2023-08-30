@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "fa5ee773-03c9-40c9-b7f9-49254675b58f",
+		"_postman_id": "cc6108fd-835a-49b5-a29a-c3b0685ccec7",
 		"name": "Chatify Copy",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "27824073"
@@ -27,9 +27,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{base_url}}/chat/auth",
+					"raw": "{{live_url}}/chat/auth",
 					"host": [
-						"{{base_url}}"
+						"{{live_url}}"
 					],
 					"path": [
 						"chat",
@@ -75,9 +75,9 @@
 					]
 				},
 				"url": {
-					"raw": "{{base_url}}/sendMessage",
+					"raw": "{{live_url}}/sendMessage",
 					"host": [
-						"{{base_url}}"
+						"{{live_url}}"
 					],
 					"path": [
 						"sendMessage"
@@ -101,9 +101,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{base_url}}/fetchMessages",
+					"raw": "{{live_url}}/fetchMessages",
 					"host": [
-						"{{base_url}}"
+						"{{live_url}}"
 					],
 					"path": [
 						"fetchMessages"
@@ -118,9 +118,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}/download/file-name-here",
+					"raw": "{{live_url}}/download/file-name-here",
 					"host": [
-						"{{base_url}}"
+						"{{live_url}}"
 					],
 					"path": [
 						"download",
@@ -145,9 +145,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{base_url}}/makeSeen",
+					"raw": "{{live_url}}/makeSeen",
 					"host": [
-						"{{base_url}}"
+						"{{live_url}}"
 					],
 					"path": [
 						"makeSeen"
@@ -162,9 +162,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}/getContacts",
+					"raw": "{{live_url}}/getContacts",
 					"host": [
-						"{{base_url}}"
+						"{{live_url}}"
 					],
 					"path": [
 						"getContacts"
@@ -179,9 +179,9 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}/favorites",
+					"raw": "{{live_url}}/favorites",
 					"host": [
-						"{{base_url}}"
+						"{{live_url}}"
 					],
 					"path": [
 						"favorites"
@@ -205,9 +205,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{base_url}}/star",
+					"raw": "{{live_url}}/star",
 					"host": [
-						"{{base_url}}"
+						"{{live_url}}"
 					],
 					"path": [
 						"star"
@@ -222,9 +222,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_url}}/search?input=blah",
+					"raw": "{{live_url}}/search?input=blah",
 					"host": [
-						"{{base_url}}"
+						"{{live_url}}"
 					],
 					"path": [
 						"search"
@@ -254,9 +254,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{base_url}}/shared",
+					"raw": "{{live_url}}/shared",
 					"host": [
-						"{{base_url}}"
+						"{{live_url}}"
 					],
 					"path": [
 						"shared"
@@ -280,9 +280,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{base_url}}/deleteConversation",
+					"raw": "{{live_url}}/deleteConversation",
 					"host": [
-						"{{base_url}}"
+						"{{live_url}}"
 					],
 					"path": [
 						"deleteConversation"
@@ -317,9 +317,9 @@
 					]
 				},
 				"url": {
-					"raw": "{{base_url}}/updateSettings",
+					"raw": "{{live_url}}/updateSettings",
 					"host": [
-						"{{base_url}}"
+						"{{live_url}}"
 					],
 					"path": [
 						"updateSettings"
@@ -343,9 +343,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{base_url}}/setActiveStatus",
+					"raw": "{{live_url}}/setActiveStatus",
 					"host": [
-						"{{base_url}}"
+						"{{live_url}}"
 					],
 					"path": [
 						"setActiveStatus"
@@ -369,9 +369,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{base_url}}/idInfo",
+					"raw": "{{live_url}}/idInfo",
 					"host": [
-						"{{base_url}}"
+						"{{live_url}}"
 					],
 					"path": [
 						"idInfo"
@@ -390,29 +390,22 @@
 					"formdata": [
 						{
 							"key": "email",
-							"value": "",
+							"value": "s@gmail.com",
 							"type": "text"
 						},
 						{
 							"key": "password",
-							"value": "",
+							"value": "12345678",
 							"type": "text"
 						}
 					]
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/chatify/api/auth/login",
-					"protocol": "http",
+					"raw": "{{live_url}}/auth/login",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{live_url}}"
 					],
-					"port": "8000",
 					"path": [
-						"chatify",
-						"api",
 						"auth",
 						"login"
 					]
@@ -426,7 +419,7 @@
 		"bearer": [
 			{
 				"key": "token",
-				"value": "3|laravel_sanctum_POQ942q6EHR1NMaqMEcDWLwr0CUyWLxhMUHhiiIA4dd08dc4",
+				"value": "1|laravel_sanctum_kc15sr8SMH1cnhMsiWijwMmgDISEkBA7DVHDrovn4c75bfae",
 				"type": "string"
 			}
 		]
@@ -454,13 +447,13 @@
 	"variable": [
 		{
 			"key": "base_url",
-			"value": "http://127.0.0.1:8000/chatify/api"
+			"value": "http://127.0.0.1:8000/chatify/api",
+			"disabled": true
 		},
 		{
-			"key": "live url",
+			"key": "live_url",
 			"value": "https://chattestproject.squadinnovators.com/chatify/api",
-			"type": "string",
-			"disabled": true
+			"type": "string"
 		},
 		{
 			"key": "base_url",

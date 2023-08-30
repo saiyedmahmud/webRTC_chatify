@@ -18,6 +18,8 @@ class UserController extends Controller
      */
     public function createUser(Request $request)
     {
+        dd(Auth::guard('sanctum')->user());
+        //
         try {
             //Validated
             $validateUser = Validator::make($request->all(), 
